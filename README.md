@@ -7,6 +7,11 @@ Requirements can be understood from the implementation here - https://todomvc.co
 ```
 npx gitignore node
 ```
+**Note**: If you are running npx for the first time on 
+- Add this to the generated `.gitignore` file for Git to ignore JS files from being pushed (they can be re-generated from the TS files bu running the build script which is added in a later step).
+```
+public/src/**/*.js
+```
 - Create a  `package.json`
 ```
 npm init -y
