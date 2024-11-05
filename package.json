@@ -1,0 +1,19 @@
+{
+  "name": "ascendion-todo-app",
+  "version": "1.0.0",
+  "description": "Requirements can be understood from the implementation here - https://todomvc.com/examples/javascript-es6/dist/#/",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "http-server -c-1 -o index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.6.3"
+  }
+}
