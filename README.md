@@ -58,3 +58,7 @@ npm run build:watch
 npm start
 ```
 - Check the browser on the served path
+
+## Points to ponder
+- How can focus be automatically set on an input when the page loads?
+- Handling `keypress` or `keyup` event can be helpful to determine the key that is pressed in the input. This and the `event` object can help you find out when Enter key is pressed (in order to add the todo). 
