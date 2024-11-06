@@ -60,5 +60,9 @@ npm start
 - Check the browser on the served path
 
 ## Points to ponder
+- To include a script which use `import`/`export` (i.e. a module), we need to use `script` tag with `type="module"` in the HTML file.
+- Every todo may need a unique id. You can maintain an integer for it and increment when adding a todo. Or you can use a library like `nanoid` / `uuid` that generates unique strings. You can find `nanoid` for examples here - `https://cdnjs.com/libraries/nanoid`. Note that it is a module and needs to be included using `script` with `type="module"`.
 - How can focus be automatically set on an input when the page loads?
 - Handling `keypress` or `keyup` event can be helpful to determine the key that is pressed in the input. This and the `event` object can help you find out when Enter key is pressed (in order to add the todo). 
+- What **fields** would be part of a Todo? How would you represent a Todo's data type?
+- How would you clear the todo input element after adding a new todo? Note that an input's `value` property can be read as well as set.

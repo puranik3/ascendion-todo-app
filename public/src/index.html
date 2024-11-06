@@ -15,15 +15,40 @@
         <link rel="stylesheet" href="styles/index.css" />
     </head>
     <body>
-        <h1>todos</h1>
-        <input
-            type="text"
-            placeholder="What needs to be done?"
-            id="new-todo"
-            class="px-5 py-3 my-3"
-            autofocus
-        />
+        <main id="todos-app-wrapper">
+            <h1>todos</h1>
+            <input
+                type="text"
+                placeholder="What needs to be done?"
+                id="new-todo"
+                class="px-5 py-3 my-3"
+                autofocus
+            />
+            <ul id="todos-list" class="list-unstyled"></ul>
+            <div id="status-bar">
+                <div id="items-left"></div>
+                <div id="filter">
+                    <button id="all" data-filter="all" class="btn-filter">
+                        All
+                    </button>
+                    <button id="active" data-filter="active" class="btn-filter">
+                        Active
+                    </button>
+                    <button
+                        id="completed"
+                        data-filter="completed"
+                        class="btn-filter"
+                    >
+                        Completed
+                    </button>
+                </div>
+                <button id="clear-completed">Clear completed</button>
+            </div>
+        </main>
 
-        <script src="scripts/index.js"></script>
+        <script src="scripts/index.js" type="module"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/nanoid/5.0.8/nanoid.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/nanoid/5.0.8/index.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/nanoid@5.0.0/dist/nanoid.js"></script> -->
     </body>
 </html>
